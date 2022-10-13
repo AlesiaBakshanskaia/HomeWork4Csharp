@@ -26,7 +26,7 @@ int Power(int num1, int num2){
 
 //Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе
 
-/*Console.WriteLine("Введите положительное число");
+Console.WriteLine("Введите положительное число");
 string num = Console.ReadLine()!;
 
 if (num[0] == '-') {
@@ -38,23 +38,23 @@ else {
 
 
 int GetSum(string num){
-int[] array = new int [num.Length];
-for (int i = 0; i < num.Length; i++){
-    array[i] = Convert.ToInt32(num[i].ToString());
+    int[] array = new int [num.Length];
+    for (int i = 0; i < num.Length; i++){
+        array[i] = Convert.ToInt32(num[i].ToString());
    // Console.WriteLine($"{array[i]}");
+    }
+
+    int result = 0;
+    for (int i = 0; i < array.Length; i++){
+        result += array[i];
+    }
+    return result;
 }
 
-int result = 0;
-for (int i = 0; i < array.Length; i++){
-    result += array[i];
-}
-return result;
-}
-*/
 
 //Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
-int[] Array = GetArray(8);
+/*int[] Array = GetArray(8);
 Console.WriteLine($"[{String.Join(",", Array)}]");
 
 int[] GetArray(int lenght){
@@ -63,4 +63,4 @@ int[] GetArray(int lenght){
         collection[i] = new Random().Next(10000);
     }
     return collection;
-}
+}*/
